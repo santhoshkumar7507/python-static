@@ -1,7 +1,12 @@
 {% extends "base.html" %}
-{% block content %}
-Home Page
+
+{% block title %}
+    Home Page
 {% endblock %}
-{% block content}
-    <h1>Home Page</h1>
-{% endblock %}    
+
+{% block content %}
+<div class="container mt-5 text-center">
+    <h1 class="mb-4">Home Page</h1>
+    <img src="{{ url_for('static', filename='images/image.jpg') }}" alt="Home Image" class="img-fluid rounded shadow">
+</div>
+{% endblock %}
